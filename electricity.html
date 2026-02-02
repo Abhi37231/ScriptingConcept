@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Electricity Bill</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Electricity Bill Units</h1>
+    </center>
+
+    <script>
+        let name = prompt("Enter Name");
+        document.writeln("Name: " + name + "<br><br>");
+
+        let unit = Number(prompt("Enter Units: "));
+        document.writeln("Units Consumed: " + unit + "<br><br>");
+
+        let amount = 0;
+
+        if (unit <= 50) {
+            amount = unit * 2;
+        }
+        else if (unit <= 70) {
+            amount = (50 * 2) + ((unit - 50) * 3);
+        }
+        else if (unit <= 100) {
+            amount = (50 * 2) + (20 * 3) + ((unit - 70) * 5);
+        }
+        else {
+            amount = (50 * 2) + (20 * 3) + (30 * 5) + ((unit - 100) * 9);
+        }
+
+        document.writeln("Your Electricity Bill Amount is: " + amount + " Rs");
+    </script>
+
+</body>
+
+</html>
