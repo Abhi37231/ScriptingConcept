@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info</title>
+</head>
+<body>
+
+<script>
+class Student {
+    constructor(name, age, grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+
+    displayInfo() {
+        document.write(`Name: ${this.name}<br>`);
+        document.write(`Age: ${this.age}<br>`);
+        document.write(`Grade: ${this.grade}<br><br>`);
+    }
+}
+
+
+let name = prompt("Enter student name:");
+let age = prompt("Enter student age:");
+let grade = prompt("Enter student grade:");
+
+
+let student = new Student(name, age, grade);
+
+
+student.displayInfo();
+</script>
+
+</body>
+</html>

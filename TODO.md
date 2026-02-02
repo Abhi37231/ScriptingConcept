@@ -1,0 +1,2 @@
+- [x] Modify student.js to prompt for user input (name, age, marks), calculate grade based on marks, create a Student object, and display its info.
+- [ ] Test the updated script by running it.
