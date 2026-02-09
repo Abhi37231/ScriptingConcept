@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        class BankAccount {
+            constructor(name, accno, balance) {
+                this.name = name;
+                this.accno = accno;
+                this.balance = balance;
+            }
+
+            deposit(amt) {
+                this.balance += amt;
+            }
+
+            withdraw(amt) {
+                this.balance -= amt;
+            }
+        }
+
+        let name = prompt("Enter account holder name:");
+        let accno = prompt("Enter account number:");
+        let bal = parseInt(prompt("Enter balance:"));
+
+        let acc = new BankAccount(name, accno, bal);
+
+        let dep = parseInt(prompt("Enter deposit amount:"));
+        acc.deposit(dep);
+
+        let wd = parseInt(prompt("Enter withdraw amount:"));
+        acc.withdraw(wd);
+
+        document.write("Name: " + acc.name + "<br>");
+        document.write("Account No: " + acc.accno + "<br>");
+        document.write("Final Balance: " + acc.balance);
+    </script>
+
+</body>
+
+</html>
