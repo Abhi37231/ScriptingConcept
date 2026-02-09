@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Validation</title>
+</head>
+<body>
+
+<h3><center>Age Validation<center></h3>
+
+<center><input type="number" id="age" placeholder="Enter Age"><center>
+<br><br>
+<button onclick="checkAge()">Check</button>
+
+<p id="ageResult"></p>
+
+<script>
+function checkAge() {
+    let result = document.getElementById("ageResult");
+    result.innerText = "";
+
+    try {
+        let ageValue = document.getElementById("age").value;
+
+        // Check if empty
+        if (ageValue === "") {
+            throw new Error("Please enter your age");
+        }
+
+        let age = Number(ageValue);
+
+        // Age validation
+        if (age < 18) {
+            throw new Error("Age must be 18 or above");
+        }
+
+        result.innerText = "Valid Age. You are eligible.";
+    }
+    catch (e) {
+        result.innerText = "Error: " + e.message;
+    }
+    finally {
+        console.log("Age validation attempted.");
+    }
+}
+</script>
+
+</body>
+</html>
