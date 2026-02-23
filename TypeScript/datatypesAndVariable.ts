@@ -19,4 +19,4 @@ console.log(`Name: ${firstName}`);
 console.log(`Score: ${score}`);
 console.log(`Is a student? ${isStudent}`);
 console.log(`First color in list: ${colors[0]}`);
-console.log(`Gravity constant: ${gravity}`);
+console.log(`Gravity constant: ${gravity}`); 
