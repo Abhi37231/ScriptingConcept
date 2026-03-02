@@ -8,7 +8,7 @@ let price: number = 19.99;
 // 3. Boolean
 let isStudent: boolean = true;
 
-// 4. Array
+// 4. Array 
 let colors: string[] = ["Red", "Green", "Blue"];
 
 // 5. Const 
